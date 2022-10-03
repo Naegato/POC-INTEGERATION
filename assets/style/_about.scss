@@ -1,0 +1,28 @@
+#about{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  .left, .right{
+    width: 50vw;
+  }
+
+  .right{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    .above{
+      position: absolute;
+      z-index: 3;
+    }
+  }
+
+  > *:not(img){
+    z-index: 1;
+  }
+
+  .background{
+    position: absolute;
+    z-index: 0;
+  }
+}
