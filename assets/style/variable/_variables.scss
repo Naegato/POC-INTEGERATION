@@ -10,5 +10,38 @@ $breakpoints: (
 
 $background-color: #fff;
 $font-color: #000;
+$font-color-light: #fff;
+$font-color-accent: #c98030;
 
 $transition-time: 1s;
+
+$primary-font: 'Montserrat';
+$secondary-font: 'Noto-serif';
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/style/font/montserrat/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('/assets/style/font/montserrat/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/style/font/montserrat/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/assets/style/font/montserrat/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('/assets/style/font/montserrat/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/assets/style/font/montserrat/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* noto-serif-regular - latin */
+@font-face {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/style/font/noto-serif/noto-serif-v21-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('/assets/style/font/noto-serif/noto-serif-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/style/font/noto-serif/noto-serif-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/assets/style/font/noto-serif/noto-serif-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('/assets/style/font/noto-serif/noto-serif-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/assets/style/font/noto-serif/noto-serif-v21-latin-regular.svg#NotoSerif') format('svg'); /* Legacy iOS */
+}
