@@ -1,0 +1,10 @@
+.idea
+/.idea
+.idea/*
+
+package-lock.json
+package.json
+node_modules
+
+style/style.css
+style/style.css.map
