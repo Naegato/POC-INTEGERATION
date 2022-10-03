@@ -1,10 +1,23 @@
+@use "variable/variables" as v;
+
 footer{
+  margin-top: 10rem;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: v.$font-color-light;
+  text-align: center;
 
-  p{
+  h2 {
+    font-size: 4rem;
+    letter-spacing: .2rem;
+  }
 
+  p {
+    max-width: min(500px, 50vw);
   }
 
   > *:not(img){
@@ -14,5 +27,19 @@ footer{
   img{
     position: absolute;
     z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  a {
+    margin-top: 2rem ;
+    background-color: white;
+    color: v.$font-color ;
+    transition: background-color v.$transition-time;
+
+    &:hover {
+      background-color: sandybrown ;
+    }
   }
 }
