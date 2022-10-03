@@ -6,5 +6,5 @@ package-lock.json
 package.json
 node_modules
 
-/style/style.css
-/style/style.css.map
+assets/style/style.css
+assets/style/style.css.map
