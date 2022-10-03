@@ -1,0 +1,35 @@
+@use 'variable/variables' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: v.$background-color;
+  color: v.$font-color;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+  &__cover {
+    object-fit: cover;
+  }
+
+  &__contain {
+    object-fit: contain;
+  }
+}
+
+ul {
+  list-style: none;
+}
