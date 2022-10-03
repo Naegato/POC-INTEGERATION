@@ -9,7 +9,7 @@
 }
 
 .button-animation {
-  padding: 1rem 2.5rem 1rem 1rem;
+  padding: 1rem 4.5rem 1rem 3rem;
   p {
     transform: translateX(1.5rem);
     transition: transform v.$transition-time;
@@ -37,5 +37,25 @@
       }
     }
   }
+}
+
+.parallax {
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
 }
 

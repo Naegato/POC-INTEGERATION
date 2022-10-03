@@ -1,3 +1,50 @@
-#preview {
+@use "variable/variables" as v;
 
+#preview {
+  width: v.$width;
+  margin: 10rem auto 20rem;
+
+  h2 {
+
+    margin: 1rem 0;
+  }
+
+  ul {
+    display: grid;
+    gap: 5%;
+    grid-template: auto / repeat(2,1fr);
+    counter-reset: list;
+
+    li {
+      counter-increment: list;
+      transition: box-shadow v.$transition-time;
+
+      img {
+        width: 100%;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 2rem 0;
+        width: fit-content;
+
+        &::before {
+          content: "0" counter(list);
+          color: v.$font-color-accent;
+          font-family: v.$secondary-font;
+          font-style: italic;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%) translateX(75%);
+
+          font-size: 15rem;
+          white-space: nowrap;
+          opacity: .2;
+          z-index: 0;
+        }
+      }
+    }
+  }
 }
