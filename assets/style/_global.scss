@@ -1,7 +1,29 @@
+@use "variable/variables" as v;
+
 .uppercase {
   text-transform: uppercase;
 }
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.color-accent {
+  color: v.$font-color-accent;
+}
+
+.color-light {
+  color: v.$font-color-light;
+}
+
+.font-accent {
+  font-family: v.$secondary-font;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
 }
