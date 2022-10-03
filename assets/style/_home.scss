@@ -1,0 +1,61 @@
+@use "variable/variables" as v;
+
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: v.$font-color-light;
+  text-align: center;
+
+  h1 {
+    margin: 1rem 0;
+    letter-spacing: .5rem;
+  }
+
+  p {
+    max-width: min(500px, 50vw);
+    font-size: 1.2rem;
+
+    &:first-child {
+      font-size: 1.5rem;
+    }
+  }
+
+  > *:not(.background) {
+    z-index: 1;
+  }
+
+  a {
+    margin-top: 2rem ;
+    background-color: white;
+    color: v.$font-color ;
+    transition: background-color v.$transition-time;
+
+    &:hover {
+      background-color: sandybrown ;
+    }
+  }
+
+  .background {
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+
+    &--slider {
+      display: flex;
+      position: absolute;
+      inset: 0;
+
+      img {
+        flex-shrink: 0;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
