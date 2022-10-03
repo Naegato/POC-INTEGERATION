@@ -10,6 +10,7 @@
 
 .button-animation {
   padding: 1rem 4.5rem 1rem 3rem;
+
   p {
     transform: translateX(1.5rem);
     transition: transform v.$transition-time;
@@ -22,9 +23,9 @@
       transform-origin: right;
       transform: translate(-50%,-50%);
       left: -1rem;
-      height: .2rem;
+      height: .1rem;
       width: 1rem;
-      background-color: v.$font-color;
+      background-color: var(--clr,v.$font-color);
     }
   }
 

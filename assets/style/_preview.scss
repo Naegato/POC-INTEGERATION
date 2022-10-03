@@ -1,11 +1,16 @@
 @use "variable/variables" as v;
-
+@use "mixin/media-query" as mq;
 #preview {
   width: v.$width;
   margin: 10rem auto 20rem;
+  height: fit-content;
+
+  @include mq.below(md) {
+    margin: 10rem auto 30rem;
+
+  }
 
   h2 {
-
     margin: 1rem 0;
   }
 
@@ -14,6 +19,10 @@
     gap: 5%;
     grid-template: auto / repeat(2,1fr);
     counter-reset: list;
+
+    @include mq.below(md) {
+      grid-template: repeat(4,1fr) / 1fr;
+    }
 
     li {
       counter-increment: list;
